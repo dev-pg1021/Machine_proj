@@ -75,6 +75,7 @@ namespace Machine_proj.Models
 
 
                     lstprod.Add(p);
+                    
                 }
                 dr.Close();
             }
