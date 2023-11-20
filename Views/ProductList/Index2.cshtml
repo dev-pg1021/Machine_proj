@@ -1,0 +1,26 @@
+﻿html
+@model IEnumerable<Machine_proj.Models.ProductList>
+
+@{
+    ViewBag.Title = "Categorized ProductList ";
+}
+
+<h2>ProductList </h2>
+
+<table class="table">
+    <tr>
+        <th>Product ID</th>
+        <th>Product Name</th>
+        
+
+    </tr>
+
+    @foreach (var prod in Model)
+    {
+        <tr>
+            <td>@prod.ProductId</td>
+            <td>@prod.ProductName</td>
+            
+        </tr>
+    }
+</table>

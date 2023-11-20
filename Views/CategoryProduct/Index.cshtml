@@ -1,0 +1,28 @@
+﻿
+
+html
+@model IEnumerable<Machine_proj.Models.Category>
+
+@{
+    ViewBag.Title = "Category List";
+}
+
+<h2>Category List</h2>
+
+<table class="table">
+    <tr>
+        <th>Category ID</th>
+        <th>Category Name</th>
+        <th>Category Code</th>
+        
+    </tr>
+
+    @foreach (var category in Model)
+    {
+        <tr>
+            <td>@category.CategoryId</td>
+            <td>@category.CategoryName</td>
+            <td>@category.CategoryCode</td>
+        </tr>
+    }
+</table>
